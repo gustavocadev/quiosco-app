@@ -27,9 +27,10 @@ model Category {
 }
 
 model Order {
-  id    Int    @id @default(autoincrement())
-  name  String
-  date  String
-  total Float
-  order Json
+  id     Int     @id @default(autoincrement())
+  name   String
+  date   String
+  total  Float
+  order  Json
+  estado Boolean @default(false)
 }
